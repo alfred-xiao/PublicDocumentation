@@ -124,3 +124,12 @@ whos attribute `id` is: `t2`
 
 ` :name text` = For the found tracks give us the child node named
 `name`'s contents (text).
+
+#### Question 3
+
+Get the first name of all tracks?
+
+(Answer): `(xml1-> zipped :track :name text)`
+Like above, each argument resembles a filter. But the function returns
+just the first matched result. using `xml->` returns all matched reuslts
+tested against all 'filters'.
